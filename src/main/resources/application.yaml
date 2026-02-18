@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: javawizard
+  threads:
+    virtual:
+      enabled: true
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: book-group
+      auto-offset-reset: earliest
+    producer:
+      properties:
+        '[linger.ms]': 150 # Dá tempo para o batch encher de verdade
+        '[buffer.memory]': 268435456 # 256MB para evitar que as threads bloqueiem cedo
+        '[compression.type]': lz4 # Menor consumo de CPU que Zstd
+        '[max.in.flight.requests.per.connection]': 5 # Melhora o pipelining
+      batch-size: 524288 # 512KB
+      acks: 1
+
+app:
+  topic:
+    books: books-topic

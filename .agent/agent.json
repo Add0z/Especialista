@@ -1,0 +1,16 @@
+{
+    "skills": {
+        "code-reviewer": {
+            "model": "gemini-3-pro-high-preview",
+            "temperature": 0.2
+        },
+        "architect-mentor": {
+            "model": "gemini-3-pro-preview",
+            "temperature": 0.2
+        },
+        "commit-org": {
+            "model": "gemini-3-flash",
+            "temperature": 0.5
+        }
+    }
+}
