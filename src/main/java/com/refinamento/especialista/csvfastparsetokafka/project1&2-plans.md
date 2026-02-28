@@ -21,3 +21,23 @@ Gatherers vs Collectors
 Backpressure simulation
 
 Why map/filter chains can still be expensive
+
+🟢 Project 2 — Kafka Producer With Throughput Tuning
+
+Goal: Understand batching, compression, and network behavior.
+
+Create a producer that:
+
+Sends millions of synthetic events
+
+Experiments with linger, batch size, compression
+
+Measures latency vs throughput
+
+You will learn:
+
+Kafka is a filesystem + network system
+
+Why batching beats parallelism
+
+Serialization cost dominance

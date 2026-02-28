@@ -36,6 +36,23 @@ Testamos o impacto de `parallelStream()` e Virtual Threads (Java 21).
 
 ---
 
+## 🔄 Gatherers in Practice
+
+This project leveraged Java Gatherers to:
+
+* Transform CSV lines into domain objects in a streaming fashion.
+* Implement stateful batching without collecting intermediate lists.
+* Preserve backpressure semantics while maintaining high throughput.
+
+The use of Gatherers allowed us to explore the performance trade-offs between:
+* Sequential processing
+* Parallel streams
+* Stateful transformations
+
+Under lightweight parsing workloads, sequential processing with efficient batching outperformed parallel execution due to reduced lock contention and lower scheduling overhead.
+
+---
+
 ## ⚙️ Kafka Producer Tuning — Final Configuration & Rationale
 
 All configurations below were defined after iterative benchmarking against a single-node Apache Kafka broker running locally.
