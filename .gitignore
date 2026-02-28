@@ -31,21 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
-src/.DS_Store
-src/.DS_Store
-src/main/.DS_Store
-src/main/java/.DS_Store
-src/main/java/com/.DS_Store
-src/main/java/com/refinamento/.DS_Store
-src/main/java/com/refinamento/especialista/.DS_Store
-src/main/java/com/refinamento/especialista/csvfastparsetokafka/.DS_Store
-src/main/java/com/refinamento/especialista/csvfastparsetokafka/util/.DS_Store
 especialista.code-workspace
-.DS_Store
-src/.DS_Store
-src/main/.DS_Store
-src/main/java/.DS_Store
-src/main/java/com/.DS_Store
-src/main/java/com/refinamento/.DS_Store
-src/main/java/com/refinamento/especialista/.DS_Store
-src/main/java/com/refinamento/especialista/csvfastparsetokafka/.DS_Store
+
+### macOS ###
+**/.DS_Store
